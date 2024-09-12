@@ -1,0 +1,214 @@
+
+
+
+
+
+
+   .projects-section {
+    padding: 4rem 2rem;
+    background-color: white;
+}
+body.dark-mode  .projects-section{
+  background-color: #121212;
+  color: #ffffff;
+  transition: background-color 0.5s, color 0.5s;
+}
+.headline-hr {
+  width: 200px;
+  height: 3px;
+  background-color: black;
+  border: none;
+  margin: 0.5rem auto;
+  margin-bottom: 2rem;
+
+}
+body.dark-mode .headline-hr {
+  background-color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+body.dark-mode .section-title {
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.project-card {
+  position: relative;
+  width: 430px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+body.dark-mode .project-card {
+  background-color: #1e1e1e;
+ 
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-image img {
+  width: 430px;
+  height: 314px;
+  object-fit: cover;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: yellow;
+  padding: 0.5rem;
+
+  z-index: 1;
+  transition:  transform 0.4s ease;
+}
+body.dark-mode .card-content {
+ 
+  background-color: yellow;
+ 
+}
+.card-content h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #333;
+}
+body.dark-mode .card-content h2 {
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+.card-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+body.dark-mode .card-overlay {
+  background-color: rgba(50, 50, 50, 0.9);
+  color: white;
+
+  
+}
+.project-description{
+  padding-top: 2rem;
+}
+
+.project-card:hover .card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card:hover .card-content {
+  transform: translateY(-350%);
+}
+
+.project-description {
+  margin-bottom: 1rem;
+}
+
+.card-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card-links .icon {
+  font-size: 2.4rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .card-links .icon {
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.card-links .icon:hover {
+  color: #4681f4;
+}
+body.dark-mode .card-links .icon:hover{
+  color: yellow;
+}
+
+/* CSS for filter buttons */
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.filter-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #4681f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode .filter-button {
+  background-color: #4681f4;
+  color: #fff;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.filter-button.active,
+.filter-button:hover {
+    background-color:#4681f4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

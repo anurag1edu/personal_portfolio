@@ -1,0 +1,172 @@
+.firstsectionpart {
+  position: relative; /* Ensures particles and content are positioned correctly */
+  height:100vh;
+}
+
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Lower z-index to place it behind the content */
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; 
+  position: relative;
+  z-index: 2; /* Higher z-index to place it on top of the particles */
+  transition: background-color 0.5s, color 0.5s;
+  
+}
+
+.firstsectionContent {
+  line-height: 1.6;
+  font-weight: 500;
+  padding: 1rem;
+  margin-bottom: 9rem;
+  z-index: 2;
+  position: relative;
+}
+
+
+.firstsectionContent h1 {
+  margin: 0;
+  font-size: 2.7rem;
+}
+
+.firstsectionContent span {
+  color:rgb(255, 0, 0);
+  /* color: #4681f4; */
+}
+
+.firstsectionContent p {
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.firstsectionImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  z-index: 2;
+  position: relative;
+}
+
+.firstsectionImg img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+ 
+  object-fit: cover;
+  transition: transform 0.1s, box-shadow 0.5s;
+  position: relative;
+  margin-bottom: 9rem;
+  z-index: 2;
+}
+body.dark-mode .firstsectionImg img{
+  box-shadow: 0 0 30px white;
+}
+
+.firstsectionImg img::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6347, #ffcc00, #33cc33, #00ccff, #ff66ff);
+  background-size: 300% 300%;
+  animation: gradientAnimation 5s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  .firstSection {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .firstsectionContent {
+    margin-bottom: 2rem;
+  }
+
+  .firstsectionImg img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+body.dark-mode .firstSection {
+  /* background-color: #121212; */
+  color: #ffffff;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+body.dark-mode .firstsectionContent span {
+  color: #ff6347; 
+  /* color: #4681f4 */
+}
+
+body.dark-mode .firstsectionImg img::before {
+  background: linear-gradient(45deg, #ff6347, #ffcc00, #33cc33, #00ccff, #ff66ff);
+ 
+}
+
+body.dark-mode .firstsectionImg img {
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+} 
+
+
+
+
+
+
+/* FirstSection.css */
+
+.wave {
+  display: inline-block;
+  animation: wave-animation 2.5s infinite;
+  transform-origin: 70% 70%; /* Adjust the origin to make the wave look natural */
+}
+
+@keyframes wave-animation {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+@media ( max-width:850px){
+  .firstsectionContent{
+    margin-bottom: 0rem;
+    margin-top:4rem
+  }
+}

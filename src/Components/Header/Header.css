@@ -1,0 +1,248 @@
+html {
+  scroll-behavior: smooth;
+}
+ 
+ body {
+  background-color: #ffffff;
+  color: #000000;
+ 
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+ 
+}
+
+.navServices{
+  text-align: center;
+  align-items: center;
+}
+
+.navsection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 0.5rem 2rem;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.navsection.light {
+  background-color: #ffffff;
+}
+
+.navsection.dark {
+  background-color: #1f1f1f;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.hambergermenu{
+  display: none;
+}
+.navlogo {
+  margin-left: 2rem;
+  font-size: 2rem;
+  margin-bottom: 3px;
+  flex: 1;
+}
+
+@media (max-width: 850px) {
+  .navlogo {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.navServices {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.navServices ul {
+  display: flex;
+}
+
+.navServices li {
+  list-style-type: none;
+  margin: 0px 1rem;
+  cursor: pointer;
+  position: relative;
+}
+.navServices li:hover{
+  color:rgb(255, 0, 0);
+}
+
+.navServices li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navServices li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 0, 0);
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: -9px;
+  
+  
+}
+
+.navServices li:hover::after {
+  width: 100%;
+}
+.navServices :last-child {
+  
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2rem;
+  z-index: 1001;
+  color:rgb(255, 0, 0);
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 0rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .theme-toggle {
+ 
+  color: #ffffff;
+}
+
+body.dark-mode .theme-toggle:hover {
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media (max-width:900px){
+  .navlogo{
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+  .hambergermenu{
+    display: block;
+    padding-left: 2rem;
+    padding-top: 0.3rem;
+   
+  }
+  
+  .navsection{
+    padding:0.6rem 1rem;
+  }
+  .navlogo{
+    font-size: 1.8rem;
+   
+  }
+
+  .menuicon{
+  
+  }
+  .navServices {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 290px;
+    display: flex;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+  }
+  body.dark-mode .navServices{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .navServices.open {
+    transform: translateX(0);
+  }
+
+  .navServices ul {
+    display: block;
+    margin-left: 5rem;
+  }
+
+  .navServices li {
+    display: block;
+    margin: 1rem 0;
+    padding: 1rem 0rem;
+    font-size: 1.3rem;
+  }
+
+  .menu-backdrop {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+}
+
+/* body.dark-mode .navServices {
+  background-color: #1f1f1f;
+  transition: background-color 0.5s, color 0.5s;
+} */
+
+/* body.dark-mode .navServices li {
+  color: #ffffff;
+  transition: background-color 0.5s, color 0.5s;
+} */
+
+@media (max-width: 850px) {
+  .mobile {
+    display: block;
+  }
+  .mobileview {
+    display: inline-block;
+  }
+} 
+
+.navlogo a{
+  color:black;
+
+}
+
+body.dark-mode .navlogo a{
+  color:white;
+ 
+}

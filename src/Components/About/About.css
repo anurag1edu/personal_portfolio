@@ -1,0 +1,169 @@
+
+
+    .aboutMe {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        background-color: white;
+        color: #333;
+        height: 70vh;
+        transition: background-color 0.5s, color 0.5s;
+        flex-direction: row;
+     
+
+         flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    }
+      
+    .aboutMeImg {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 1000px;
+    }
+      
+    .aboutMeImg img {
+        width: 100%; /* Make the image take up full space */
+        max-width: 350px; /* Limit the max width */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%;
+        border: 5px solid transparent;
+        /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+        box-shadow: 0 0 30px #4681f4;
+        object-fit: cover;
+        transition: transform 0.1s, box-shadow 0.5s, filter 0.5s;
+      
+        /* filter: grayscale(100%); */
+        z-index: 1;
+    }
+    .headline-hr {
+      width: 270px;
+      height: 3px;
+      background-color: #4681f4;
+      border: none;
+      margin: 0.5rem auto;
+      margin-bottom: 2rem;
+ 
+    
+    }
+    .aboutMeContent {
+        flex: 2;
+        margin-left: 0rem;
+    
+        transition: margin-top 0.5s ease;
+    }
+      .aboutMeImg img:hover {
+        filter: grayscale(0%);
+      }
+      
+      .aboutMeImg img::before {
+        content: '';
+        position: absolute;
+       
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        border-radius: 50%;
+        background: linear-gradient(45deg, #ff6347, #ffcc00, #33cc33, #00ccff, #ff66ff);
+        background-size: 300% 300%;
+        animation: gradientAnimation 5s ease infinite;
+        z-index: -1;
+      }
+      
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
+      .aboutMeContent {
+        flex: 2;
+        margin-left: 3rem;
+    margin-right: 2rem;
+        transition: margin-top 0.5s ease;
+       
+      }
+      
+      .aboutMeContent h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+       
+
+
+      }
+      
+      .aboutMeContent p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        word-wrap: break-word;
+      }
+      
+      @media (max-width: 850px) {
+        .aboutMe {
+          padding-top: 2rem;
+          flex-direction: column;
+          justify-content:flex-end;
+          text-align: center;
+          height: auto; /* Let height expand */
+        }
+      
+        .aboutMeImg img {
+          width: 300px;
+          height: 300px;
+        }
+      
+        .aboutMeContent {
+   
+          margin-top: 1rem; /* Move text downward */
+          max-width: 80%;
+        }
+      
+        .aboutMeContent h2 {
+          font-size: 1rem;
+        }
+      
+        .aboutMeContent p {
+          font-size: 1.3rem;
+        }
+      }
+      
+      body.dark-mode .aboutMe {
+        background-color: #121212;
+        color: #ffffff;
+        transition: background-color 0.5s, color 0.5s;
+      }
+      
+      body.dark-mode .aboutMeImg img::before {
+        background: linear-gradient(45deg, #ff6347, #ffcc00, #33cc33, #00ccff, #ff66ff);
+      }
+      
+      body.dark-mode .aboutMeImg img {
+        /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); */
+        box-shadow: 0 0 40px #4681f4;
+      }
+      
+      /* body.dark-mode .aboutsection h2{
+        background-color: #121212;
+        color: #ffffff;
+        transition: background-color 0.5s, color 0.5s;
+      } */
+      body.dark-mode .aboutsection{
+        background-color: #121212;
+        color: #ffffff;
+        transition: background-color 0.5s, color 0.5s;
+      }
+
+    .aboutsection{
+    background-color: white;
+    margin-top:1rem;
+     margin-left: 3rem;
+     margin-right: 3rem;
+    }
