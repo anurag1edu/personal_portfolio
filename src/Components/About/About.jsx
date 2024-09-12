@@ -58,7 +58,7 @@ const AboutMe = () => {
         </div>
         <div className="aboutMeContent">
           <div>
-            <p style={{color:"#4681f4" , fontWeight:"600" , fontSize:"1.7rem"}}>Hello! I'm Tinu Kumar</p>
+            <p style={{color:"#4681f4" , fontWeight:"600" , fontSize:"1.7rem"}}>Hello! I'm Anurag Kumar</p>
           </div>
           <p>
             A passionate web developer with a strong background in data analysis

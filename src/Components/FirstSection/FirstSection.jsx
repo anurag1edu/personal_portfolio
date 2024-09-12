@@ -55,7 +55,7 @@ const FirstSection = () => {
         <div className="firstsectionContent" data-aos="fade-up">
           <h1>Hi There <span className="wave">👋</span></h1>
           <h1>
-            I am <span>Tinu Kumar</span>
+            I am <span>Anurag Kumar</span>
           </h1>
           <div>
             <p>

@@ -22,23 +22,23 @@ const Timeline = () => {
   }, []);
 
   const timelineData = [
-    {
-      year:"2024 JULY , Secure one of the tech giants company as a software developer.",
-      bgColor: "linear-gradient(to right, #00c6ff, #0072ff)",
-      animation: "fade-up",
+    // {
+    //   year:"2024 JULY , Secure one of the tech giants company as a software developer.",
+    //   bgColor: "linear-gradient(to right, #00c6ff, #0072ff)",
+    //   animation: "fade-up",
       
     
-    },
-    {
-      year:"2024 MAR-MAY , Started Working  as a  Data Junior AI Intern in Third eye.",
-      bgColor: "linear-gradient(to right, #00c6ff, #0072ff)",
-      animation: "fade-up",
+    // },
+    // {
+    //   year:"Started Working  as a  Data Junior AI Intern in Third eye.",
+    //   bgColor: "linear-gradient(to right, #00c6ff, #0072ff)",
+    //   animation: "fade-up",
       
-      image:thirdeye,
-    },
+    //   image:thirdeye,
+    // },
   
     {
-      year: "2023 , Build data science projects , Explore new Technoloiges , resume building and started applying for internship",
+      year: " Build data science projects , Explore new Technoloiges ",
       description:
         "",
       bgColor: "linear-gradient(to right, #ff758c, #ff7eb3)",
@@ -46,7 +46,7 @@ const Timeline = () => {
       image:datascience,
     },
     {
-      year: " 2022 , Build Projects based on MERN and Started exploring Data science Life cycle",
+      year: " Build Projects based on MERN and Started exploring Data science Life cycle",
       description:
         "",
       bgColor: "linear-gradient(to right, #ff9a9e, #fecfef)",
@@ -54,7 +54,7 @@ const Timeline = () => {
       image:datad
     },
     {
-      year: "2021 ,  Started Programming and Development",
+      year: " Started Programming and Development",
       description:
         "",
       bgColor: "linear-gradient(to right, #fbc2eb, #a6c1ee)",
@@ -62,7 +62,7 @@ const Timeline = () => {
       image:icons,
     },
     {
-      year: "2020 , Commencement",
+      year: " Commencement",
       description: "Beginning my Engineering journey as a computer science student with specialization in Data Science.",
       bgColor: "linear-gradient(to right, #84fab0, #8fd3f4)",
       animation: "fade-up",

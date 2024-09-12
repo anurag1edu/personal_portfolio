@@ -23,7 +23,7 @@ const Header = () => {
       <div className="navlogo" >
         <a href="#home" style={{ textDecoration: "none" }}>
           <ReactTyped 
-            strings={["Tinu Kumar"]}
+            strings={["Anurag Kumar"]}
             typeSpeed={100}
             cursorChar="|"
             showCursor={false}
